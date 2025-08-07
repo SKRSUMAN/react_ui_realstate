@@ -30,7 +30,7 @@ jobs:
       run: mkdir -p /var/www/realstate/dist
 
     - name: Clean old files
-      run: sudon rm -rf /var/www/realstate/dist/*
+      run: sudo rm -rf /var/www/realstate/dist/*
 
     - name: Copy built files
       run: sudo cp -r /home/ubuntu/realstate/realstate/react_ui_realstate/react_ui_realstate/dist/* /var/www/realstate/dist
