@@ -29,3 +29,7 @@ jobs:
 
     - name: Copy built files
       run: sudo cp -r /home/ubuntu/realstate/realstate/react_ui_realstate/react_ui_realstate/dist/* /var/www/realstate/dist
+
+    - name: Restart PM2 process
+      run: pm2 restart cicdreact
+
